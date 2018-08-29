@@ -47,6 +47,7 @@ def create_settings(from_environment=False, locustfile=None,
     settings.logfile = None
     settings.show_task_ratio = False
     settings.print_stats = False
+    settings.reset_stats = False # fix compatibility with locustio
 
     if from_environment:
         for attribute in ['locustfile', 'classes', 'host', 'num_requests', 'num_clients', 'hatch_rate']:
