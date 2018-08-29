@@ -9,14 +9,11 @@ setup(
     download_url  =  'https://github.com/FutureSharks/invokust/archive/0.41.tar.gz',
     license = 'GPLv2',
     description = 'A small wrapper for locust to allow load testing on AWS Lambda',
-    scripts = ['invokr.py'],
+    scripts = [],
     packages = [
         'invokust',
-        'invokust.aws_lambda',
     ],
     install_requires = [
-        'locustio==0.8a2',
-        'boto3',
         'pyzmq',
         'numpy'
     ],
